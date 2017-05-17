@@ -12,7 +12,7 @@ n = nluModule()
 
 n.loadModel()
 
-r=n.findAction("I want to buy British Sterling ")
+r=n.findAction("I want to buy Australian dollar ")
 print(r)
 
 

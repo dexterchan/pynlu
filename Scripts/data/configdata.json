@@ -2,10 +2,10 @@
 	"buy,stock":"@investment",
 	"sell,stock":"@investment",
 	"pay,credit card":"@money transfer",
-	"do,money transfer":"@money transder",
+	"do,money transfer":"@money transfer",
 	"apply,credit card":"@credit card",
 	"buy,Sterling":"@foreign exchange",
 	"sell,Sterling":"@foreign exchange",
-	"buy,australian dollar":"@foreign exchange",
-	"sell,australian dollar":"@foreign exchange"
+	"buy,Australian dollar":"@foreign exchange",
+	"sell,Australian dollar":"@foreign exchange"
 }
