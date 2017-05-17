@@ -1,0 +1,11 @@
+{
+	"buy,stock":"@investment",
+	"sell,stock":"@investment",
+	"pay,credit card":"@money transfer",
+	"do,money transfer":"@money transder",
+	"apply,credit card":"@credit card",
+	"buy,sterling":"@foreign exchange",
+	"sell,sterling":"@foreign exchange",
+	"buy,australian dollar":"@foreign exchange",
+	"sell,australian dollar":"@foreign exchange"
+}
