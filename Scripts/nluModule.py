@@ -54,7 +54,7 @@ class nluModule:
         outputResponse["verb"] = outputVerb
         
         strAction = outputVerb+","+outputEntity
-        
+        print(strAction)
         contest = {}
         for key in self.actionMap.keys():
             contest [key]=self.KeyMap[ key ].calculateJaccardDist(Sentence( strAction ))
@@ -62,8 +62,11 @@ class nluModule:
         sorted_x = sorted(contest.items(), key=operator.itemgetter(1))
         
         sortedResponse=[]
+        actionSet=[]
         for s in sorted_x:
-            sortedResponse.append( (self.actionMap [ s[0] ],  s[1] )  )
+            if(self.actionMap [ s[0] ] not in actionSet):
+                sortedResponse.append( (self.actionMap [ s[0] ],  s[1] )  )
+                actionSet.append(self.actionMap [ s[0] ])
         
         
         return sortedResponse
